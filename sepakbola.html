@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- buat tampilan form disini -->
+    <div id="judulbola">
+    <h1>hitung hasil pertandingan</h1>
+  </div>
+    <h3>Pertandingan Piala AFF 2021</h3>
+    <form action="#">
+      <div class="row g-3 align-items-center">
+        <div class="col-sm-2">
+          <label for="skorTimA" class="col-form-label">SKOR TIM A</label>
+        </div>
+        <div class="col-md-3">
+          <select name="skorTimA" id="skorTimA" class="form-select">
+            <option value="1"></option>
+            <option value="2"></option>
+          </select>
+        </div>
+      </div>
+      <div class="row g-3 align-items-center">
+        <div class="col-sm-2">
+          <label for="skorTimB" class="col-form-label">SKOR TIM B</label>
+        </div>
+        <div class="col-md-3">
+          <select name="skorTimB" id="skorTimB " class="form-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+      </div>
+      <div class="row g-3 align-items-center">
+        <div class="col-sm-2">
+          <label for="action" class="col-form-label">WAKTU PERTANDINGAN</label>
+        </div>
+        <div class="col-md-3">
+          <select name="action" id="wktPertandingan" class="form-select"></select>
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col-md-5">
+          <button type="button" id="btn_hasil" class="btn btn-primary form-control" onclick="hasil()">LIHAT HASIL</button>
+        </div>
+      </div>
+    </form>
+    <!-- letakkan link ke file javascript disini -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/kalkulator.js"></script>
+  </body>
+</html>
